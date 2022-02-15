@@ -1,4 +1,0 @@
-deploy:
-  - okteto build -t okteto.dev/hello-world:latest
-devs:
-  - okteto.yml
