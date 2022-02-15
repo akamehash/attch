@@ -1,3 +1,3 @@
-module github.com/okteto/go-getting-started
+module github.com/akamehash/attch
 
 go 1.13
