@@ -9,5 +9,5 @@ for arg in args:
     if len(t)>1: k,v=arg.split('='); GET[k]=v
 
 my_placeholder = st.empty()
-my_placeholder.text("The user entered %s" % GET.get('user_id') +'<br><form action="" method="POST"><input type="text" name="username"><input type="submit" value="Submit"></form> ')
+my_placeholder.text("The user entered %s" + GET.get('user_id') +'<br><form action="" method="POST"><input type="text" name="username"><input type="submit" value="Submit"></form> ')
 
