@@ -1,8 +1,8 @@
 import streamlit as st
-import pandas as pd
-import time
-import os, sys
-def get_user_name():
-    return 'John'
+import cgi
+form = cgi.FieldStorage()
+st.header(form["username"])
 
-st.header(os.getenv("QUERY_STRING"))
+my_placeholder = st.empty()
+my_placeholder.text('<form action="" method="get"><input type="text" name="username"><input type="submit" value="Submit"></form> ')
+
