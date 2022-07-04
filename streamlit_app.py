@@ -29,7 +29,7 @@ st.write('Done!')
 
 with st.spinner('Wait for it...'):
     time.sleep(1)
-st.success('Done!')
+st.success(os.getenv("QUERY_STRING"))
 
 st.error('This is an error')
 
@@ -42,8 +42,6 @@ st.exception(e)
 
 my_placeholder = st.empty()
 
-# Now replace the placeholder with some text:
-my_placeholder.text(os.getenv("QUERY_STRING"))
 
 st.help(pd.DataFrame)
 
